@@ -12,7 +12,7 @@ const Index = () => {
     const fetchInstagramPhotos = async () => {
       try {
         // Replace this URL with the actual scraping logic to fetch photos from the Instagram page
-        const response = await fetch("https://www.instagram.com/mizahi_kurd/");
+        const response = await fetch("https://cors-anywhere.herokuapp.com/https://www.instagram.com/mizahi_kurd/");
         const data = await response.json();
         // Assuming data is an array of photo URLs
         setPhotos(data);
